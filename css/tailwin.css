@@ -847,6 +847,10 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .py-8 {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -929,4 +933,108 @@ body::-webkit-scrollbar-thumb {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hover\:bg-violet-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(270 9% 17% / var(--tw-bg-opacity));
+  }
+
+  .hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .hover\:text-violet-200:hover {
+    --tw-text-opacity: 1;
+    color: hsl(270 9% 17% / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 900px) {
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:top-0 {
+    top: 0px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-10 {
+    height: 10rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:w-60 {
+    width: 15rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:gap-x-3 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .sm\:border-violet-200 {
+    --tw-border-opacity: 1;
+    border-color: hsl(270 9% 17% / var(--tw-border-opacity));
+  }
+
+  .sm\:border-b-violet-200 {
+    --tw-border-opacity: 1;
+    border-bottom-color: hsl(270 9% 17% / var(--tw-border-opacity));
+  }
+
+  .sm\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
+  .sm\:text-xs {
+    font-size: 1.4rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 1.6rem;
+  }
+
+  .sm\:font-medium {
+    font-weight: 500;
+  }
+
+  .sm\:text-violet-200 {
+    --tw-text-opacity: 1;
+    color: hsl(270 9% 17% / var(--tw-text-opacity));
+  }
+
+  .sm\:text-violet-100 {
+    --tw-text-opacity: 1;
+    color: hsl(273 4% 51% / var(--tw-text-opacity));
+  }
 }
