@@ -46,49 +46,49 @@
             </nav>
         </header>
 
-        <main>
+        <main class ="relative">
             <picture>
                 <source media ="(min-width: 900px)" srcset ="./assets/intro-desktop.jpg">
-                <img class ="w-full aspect-lg" src ="./assets/intro-mobile.jpg" alt ="image intro">
+                <img class ="w-full aspect-lg sm:max-w-2xl sm:absolute sm:top-8 sm:right-[5%] sm:z-10" src ="./assets/intro-mobile.jpg" alt ="image intro">
             </picture>
-            <figure class ="w-full max-h-screen py-8 flex items-center justify-center relative aspect-lg bg-violet">
+            <figure class ="w-full max-h-screen py-8 flex items-center justify-center relative aspect-lg bg-violet sm:aspect-video">
                 <picture>
                     <source media ="(min-width: 900px)" srcset ="./assets/left-desktop.svg">
-                    <img class ="absolute top-0" src ="./assets/left-mobile.svg" alt ="pattern left">
+                    <img class ="absolute top-0 sm:top-50" src ="./assets/left-mobile.svg" alt ="pattern left">
                 </picture>
                 <picture>
                     <source media ="(min-width: 900px)" srcset ="./assets/right-desktop.svg">
-                    <img class ="absolute -bottom-[40%] right-0" src ="./assets/right-mobile.svg" alt ="pattern left">
+                    <img class ="absolute -bottom-[40%] right-0 sm:top-0" src ="./assets/right-mobile.svg" alt ="pattern left">
                 </picture>
-                <figcaption class ="w-90 mx-auto text-center">
+                <figcaption class ="w-90 mx-auto text-center sm:max-w-3xl sm:ml-[5%] sm:text-start">
                     <h1 class ="text-gray text-xl font-display">Humanizing your insurance.</h1>
                     <p class ="my-2 text-gray text-sm">
                         Get your life insurance coverage easier and faster. We blend our expertise and technology to help 
                         you find the plan that’s right for you. Ensure you and your loved ones are protected.
                     </p>
-                    <button class ="w-52 h-4 border text-white text-xs border-white">VIEW PLANS</button>
+                    <button class ="w-52 h-4 border text-white text-xs border-white hover:text-violet hover:bg-white">VIEW PLANS</button>
                 </figcaption>
-            </figure>
-            <section class ="w-90 mx-auto mt-18 mb-14 text-center">
+            </figure>        
+            <section class ="w-90 mx-auto mt-18 mb-14 text-center sm:text-start">
                 <h2 class ="text-violet-200 text-xl font-display">We're different</h2>
-                <section class ="mt-6 flex flex-col gap-y-3.5" id ="planInsertSection">
+                <section class ="mt-6 flex flex-col gap-y-3.5 sm:flex-row sm:gap-x-3" id ="planInsertSection">
                     <template id ="planTemplate">
                         <article>
-                            <img class ="w-8 h-8 mx-auto" alt ="icon plan" draggable ="false" loading ="lazy">
+                            <img class ="w-8 h-8 mx-auto sm:ml-0" alt ="icon plan" draggable ="false" loading ="lazy">
                             <h3 class ="mt-2.5 mb-1 text-violet-200 text-lg font-display"></h3>
-                            <p class ="text-zinc-400 text-sm text-center"></p>
+                            <p class ="text-zinc-400 text-sm text-center sm:text-start"></p>
                         </article>
                     </template>
                 </section>
             </section>
-            <figure class ="w-90 mx-auto flex items-center justify-center relative aspect-lg overflow-hidden bg-violet">
+            <figure class ="w-90 max-h-[40rem] mx-auto flex items-center justify-center relative aspect-lg overflow-hidden bg-violet sm:h-96">
                 <picture>
                     <source media ="(min-width: 900px)" srcset ="./assets/work-desktop.svg">
                     <img class ="absolute top-0 right-0" src ="./assets/work-mobile.svg" alt ="pattern left">
                 </picture>
-                <figcaption class ="text-center relative">
-                    <h2 class ="text-gray text-xl font-display">Find out more about how we work</h2>
-                    <button class ="w-60 h-4 mt-3 text-white text-xs border border-white">HOW WE WORK</button>
+                <figcaption class ="text-center relative sm:w-90 sm:flex sm:items-center sm:justify-between">
+                    <h2 class ="text-gray text-xl font-display sm:max-w-2xl sm:text-start">Find out more about how we work</h2>
+                    <button class ="w-60 h-4 mt-3 text-white text-xs border border-white sm:m-0 hover:text-violet hover:bg-white">HOW WE WORK</button>
                 </figcaption>
             </figure>
         </main>
