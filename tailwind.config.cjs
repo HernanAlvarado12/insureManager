@@ -9,6 +9,7 @@ module.exports = {
       spacing: {
         '0.2': '0.2rem',
         '0.5': '0.5rem',
+        '0.7': '0.7rem',
         '1': '1rem',
         '1.5': '1.5rem',
         '2': '2rem',
@@ -20,6 +21,8 @@ module.exports = {
         '6': '6rem',
         '8': '8rem',
         '10': '10rem',
+        '14': '14rem',
+        '18': '18rem',
         '50': '50%',
         '85': '85%',
         '90': '90%'
@@ -34,20 +37,23 @@ module.exports = {
         gray: 'hsl(0, 0%, 98%)'
       },
       fontFamily: {
-        karla: "'Karla', sans-serif",
+        display: "'DM Serif Display', serif",
       },
       fontSize: {
-        'xs': '1.4rem',
-        'sm': '1.6rem',
-        'md': '1.8rem',
-        'lg': '2.4rem',
-        'base': '3.2rem',
-        'xl': '4.2rem'
+        xs: '1.4rem',
+        sm: '1.6rem',
+        md: '1.8rem',
+        base: '2.4rem',
+        lg: '3.2rem',
+        xl: '4.2rem'
       },
       borderRadius: {
         'sm': '0.6rem',
         'md': '0.8rem',
         'lg': '1rem'
+      },
+      aspectRatio: {
+        lg: '6/7'
       }
     },
   },
