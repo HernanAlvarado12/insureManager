@@ -6,6 +6,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        sm: '900px'
+      },
       height: {
         menu: 'calc(100vh - 10rem)'
       },
