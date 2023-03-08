@@ -6,9 +6,13 @@ module.exports = {
   },
   theme: {
     extend: {
+      height: {
+        menu: 'calc(100vh - 10rem)'
+      },
       spacing: {
         '0.2': '0.2rem',
         '0.5': '0.5rem',
+        '0.7': '0.7rem',
         '1': '1rem',
         '1.5': '1.5rem',
         '2': '2rem',
@@ -21,6 +25,7 @@ module.exports = {
         '8': '8rem',
         '10': '10rem',
         '14': '14rem',
+        '18': '18rem',
         '50': '50%',
         '85': '85%',
         '90': '90%'

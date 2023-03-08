@@ -26,11 +26,23 @@
         <header>
             <nav class ="w-90 h-10 mx-auto flex items-center justify-between bg-white">
                 <img src ="./assets/logo.svg" alt ="icon logo">
-                <div class ="w-3.5 h-3.5 flex items-center justify-center relative border border-black">
-                    <span class ="w-2.5 h-0.2 absolute -translate-y-0.5 bg-black"></span>
-                    <span class ="w-2.5 h-0.2 bg-black"></span>
-                    <span class ="w-2.5 h-0.2 absolute translate-y-0.5 bg-black "></span>
+                <div class ="w-3.5 h-3.5 flex items-center justify-center relative cursor-pointer border border-black" id ="iconMenu">
+                    <span class ="w-2.5 h-0.2 absolute -translate-y-0.7 bg-black"></span>
+                    <span class ="w-2.5 h-0.2 transition-all duration-300 bg-black"></span>
+                    <span class ="w-2.5 h-0.2 absolute translate-y-0.7 bg-black "></span>
                 </div>
+                <menu class ="w-full h-menu hidden absolute top-10 left-0 z-10 text-white text-md font-bold uppercase bg-violet-200">
+                    <ul class ="w-90 mx-auto pt-6 flex items-center flex-col gap-y-3.5">
+                        <li><a href ="#">how we work</a></li>
+                        <li><a href ="#">blog</a></li>
+                        <li><a href ="#">account</a></li>
+                        <button class ="w-full max-w-2xl h-4 border-2 border-white">view plans</button>
+                    </ul>
+                    <picture>
+                        <source media ="(min-width: 900px)" srcset ="./assets/footer-desktop.svg">
+                        <img class ="w-full absolute bottom-0 left-0 rotate-180" src ="./assets/footer-mobile.svg" alt ="pattern">
+                    </picture>
+                </menu>
             </nav>
         </header>
 
@@ -46,7 +58,7 @@
                 </picture>
                 <picture>
                     <source media ="(min-width: 900px)" srcset ="./assets/right-desktop.svg">
-                    <img class ="absolute -bottom-50 right-0" src ="./assets/right-mobile.svg" alt ="pattern left">
+                    <img class ="absolute -bottom-[40%] right-0" src ="./assets/right-mobile.svg" alt ="pattern left">
                 </picture>
                 <figcaption class ="w-90 mx-auto text-center">
                     <h1 class ="text-gray text-xl font-display">Humanizing your insurance.</h1>
@@ -57,14 +69,14 @@
                     <button class ="w-52 h-4 border text-white text-xs border-white">VIEW PLANS</button>
                 </figcaption>
             </figure>
-            <section class ="mt-14 mb-10 text-center">
+            <section class ="w-90 mx-auto mt-18 mb-14 text-center">
                 <h2 class ="text-violet-200 text-xl font-display">We're different</h2>
-                <section>
+                <section class ="mt-6 flex flex-col gap-y-3.5" id ="planInsertSection">
                     <template id ="planTemplate">
                         <article>
-                            <img alt ="icon plan" draggable ="false" loading ="lazy">
-                            <h3 class ="text-violet-200 text-lg font-display"></h3>
-                            <p class ="text-gray text-sm text-center"></p>
+                            <img class ="w-8 h-8 mx-auto" alt ="icon plan" draggable ="false" loading ="lazy">
+                            <h3 class ="mt-2.5 mb-1 text-violet-200 text-lg font-display"></h3>
+                            <p class ="text-zinc-400 text-sm text-center"></p>
                         </article>
                     </template>
                 </section>
@@ -81,6 +93,44 @@
             </figure>
         </main>
 
+        <footer class ="w-90 mx-auto my-8 flex items-center flex-col text-xs text-center">
+            <img src ="./assets/logo.svg" alt ="icon logo">
+            <figure class ="mt-3 mb-6 flex items-center gap-x-0.5">
+                <img src ="./assets/facebook.svg" alt ="icon company">
+                <img src ="./assets/twitter.svg" alt ="icon company">
+                <img src ="./assets/pinterest.svg" alt ="icon company">
+                <img src ="./assets/instagram.svg" alt ="icon company">
+            </figure>
+            <section class ="grid gap-y-3 uppercase font-bold">
+                <ul class ="grid gap-y-1">
+                    <li class ="text-slate-400 font-medium mb-3"><a href="#">our company</a></li>
+                    <li><a href="#">how we work</a></li>
+                    <li><a href="#">why insure?</a></li>
+                    <li><a href="#">check price</a></li>
+                    <li><a href="#">reviews</a></li>
+                </ul>
+                <ul class ="grid gap-y-1">
+                    <li class ="text-slate-400 font-medium mb-3"><a href="#">help me</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">cookies</a></li>
+                </ul>
+                <ul class ="grid gap-y-1">
+                    <li class ="text-slate-400 font-medium mb-3"><a href="#">contact</a></li>
+                    <li><a href="#">sales</a></li>
+                    <li><a href="#">support</a></li>
+                    <li><a href="#">live chat</a></li>
+                </ul>
+                <ul class ="grid gap-y-1">
+                    <li class ="text-slate-400 font-medium mb-3"><a href="#">others</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">press</a></li>
+                    <li><a href="#">licenses</a></li>
+                </ul>
+            </section>
+        </footer>
+
+        <script src ="./model.js"></script>
     </body>
 
 </html>
