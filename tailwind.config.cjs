@@ -6,6 +6,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      height: {
+        menu: 'calc(100vh - 10rem)'
+      },
       spacing: {
         '0.2': '0.2rem',
         '0.5': '0.5rem',
