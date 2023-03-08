@@ -536,10 +536,6 @@ html {
   bottom: -50%;
 }
 
-.-top-10 {
-  top: -10rem;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -558,24 +554,16 @@ html {
   margin-bottom: 2rem;
 }
 
-.mb-8 {
-  margin-bottom: 8rem;
-}
-
-.mt-10 {
-  margin-top: 10rem;
-}
-
-.mt-3 {
-  margin-top: 3rem;
-}
-
 .mb-10 {
   margin-bottom: 10rem;
 }
 
 .mt-14 {
   margin-top: 14rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 .flex {
