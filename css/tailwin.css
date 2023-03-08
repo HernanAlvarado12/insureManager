@@ -532,8 +532,8 @@ html {
   position: relative;
 }
 
-.-bottom-50 {
-  bottom: -50%;
+.-bottom-\[40\%\] {
+  bottom: -40%;
 }
 
 .right-0 {
@@ -542,18 +542,6 @@ html {
 
 .top-0 {
   top: 0px;
-}
-
-.-bottom-0 {
-  bottom: -0px;
-}
-
-.bottom-50 {
-  bottom: 50%;
-}
-
-.-bottom-\[40\%\] {
-  bottom: -40%;
 }
 
 .mx-auto {
@@ -571,8 +559,12 @@ html {
   margin-bottom: 8rem;
 }
 
-.mb-10 {
-  margin-bottom: 10rem;
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-14 {
+  margin-bottom: 14rem;
 }
 
 .mb-3 {
@@ -583,16 +575,24 @@ html {
   margin-bottom: 6rem;
 }
 
-.mt-14 {
-  margin-top: 14rem;
+.mt-18 {
+  margin-top: 18rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-2\.5 {
+  margin-top: 2.5rem;
 }
 
 .mt-3 {
   margin-top: 3rem;
 }
 
-.mt-18 {
-  margin-top: 18rem;
+.mt-6 {
+  margin-top: 6rem;
 }
 
 .flex {
@@ -631,6 +631,10 @@ html {
   height: 4rem;
 }
 
+.h-8 {
+  height: 8rem;
+}
+
 .w-2 {
   width: 2rem;
 }
@@ -653,6 +657,10 @@ html {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-8 {
+  width: 8rem;
 }
 
 .w-90 {
@@ -681,6 +689,20 @@ html {
 .translate-y-0\.5 {
   --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-0\.7 {
+  --tw-translate-y: -0.7rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0\.7 {
+  --tw-translate-y: 0.7rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -715,6 +737,10 @@ html {
 
 .gap-y-3 {
   row-gap: 3rem;
+}
+
+.gap-y-3\.5 {
+  row-gap: 3.5rem;
 }
 
 .overflow-hidden {
@@ -809,4 +835,9 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }

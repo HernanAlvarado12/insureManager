@@ -26,10 +26,10 @@
         <header>
             <nav class ="w-90 h-10 mx-auto flex items-center justify-between bg-white">
                 <img src ="./assets/logo.svg" alt ="icon logo">
-                <div class ="w-3.5 h-3.5 flex items-center justify-center relative border border-black">
-                    <span class ="w-2.5 h-0.2 absolute -translate-y-0.5 bg-black"></span>
+                <div class ="w-3.5 h-3.5 flex items-center justify-center relative cursor-pointer border border-black">
+                    <span class ="w-2.5 h-0.2 absolute -translate-y-0.7 bg-black"></span>
                     <span class ="w-2.5 h-0.2 bg-black"></span>
-                    <span class ="w-2.5 h-0.2 absolute translate-y-0.5 bg-black "></span>
+                    <span class ="w-2.5 h-0.2 absolute translate-y-0.7 bg-black "></span>
                 </div>
             </nav>
         </header>
@@ -57,14 +57,14 @@
                     <button class ="w-52 h-4 border text-white text-xs border-white">VIEW PLANS</button>
                 </figcaption>
             </figure>
-            <section class ="mt-18 mb-10 text-center">
+            <section class ="w-90 mx-auto mt-18 mb-14 text-center">
                 <h2 class ="text-violet-200 text-xl font-display">We're different</h2>
-                <section>
+                <section class ="mt-6 flex flex-col gap-y-3.5" id ="planInsertSection">
                     <template id ="planTemplate">
                         <article>
-                            <img alt ="icon plan" draggable ="false" loading ="lazy">
-                            <h3 class ="text-violet-200 text-lg font-display"></h3>
-                            <p class ="text-gray text-sm text-center"></p>
+                            <img class ="w-8 h-8 mx-auto" alt ="icon plan" draggable ="false" loading ="lazy">
+                            <h3 class ="mt-2.5 mb-1 text-violet-200 text-lg font-display"></h3>
+                            <p class ="text-zinc-400 text-sm text-center"></p>
                         </article>
                     </template>
                 </section>
@@ -118,6 +118,7 @@
             </section>
         </footer>
 
+        <script src ="./model.js"></script>
     </body>
 
 </html>
