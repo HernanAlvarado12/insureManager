@@ -427,7 +427,6 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
 }
 
@@ -533,13 +532,46 @@ html {
   position: relative;
 }
 
+.-bottom-50 {
+  bottom: -50%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mt-14 {
+  margin-top: 14rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
+}
+
+.aspect-lg {
+  aspect-ratio: 6/7;
 }
 
 .h-0 {
@@ -562,6 +594,10 @@ html {
   height: 3.5rem;
 }
 
+.h-4 {
+  height: 4rem;
+}
+
 .w-2 {
   width: 2rem;
 }
@@ -578,8 +614,20 @@ html {
   width: 3.5rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
 .w-90 {
   width: 90%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .-translate-y-0 {
@@ -614,6 +662,10 @@ html {
   justify-content: space-between;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .border {
   border-width: 1px;
 }
@@ -623,12 +675,66 @@ html {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-violet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(256 26% 20% / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.py-8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.text-lg {
+  font-size: 3.2rem;
+}
+
+.text-sm {
+  font-size: 1.6rem;
+}
+
+.text-xl {
+  font-size: 4.2rem;
+}
+
+.text-xs {
+  font-size: 1.4rem;
+}
+
+.text-gray {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+.text-violet-200 {
+  --tw-text-opacity: 1;
+  color: hsl(270 9% 17% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
