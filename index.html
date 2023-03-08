@@ -26,11 +26,23 @@
         <header>
             <nav class ="w-90 h-10 mx-auto flex items-center justify-between bg-white">
                 <img src ="./assets/logo.svg" alt ="icon logo">
-                <div class ="w-3.5 h-3.5 flex items-center justify-center relative cursor-pointer border border-black">
+                <div class ="w-3.5 h-3.5 flex items-center justify-center relative cursor-pointer border border-black" id ="iconMenu">
                     <span class ="w-2.5 h-0.2 absolute -translate-y-0.7 bg-black"></span>
-                    <span class ="w-2.5 h-0.2 bg-black"></span>
+                    <span class ="w-2.5 h-0.2 transition-all duration-300 bg-black"></span>
                     <span class ="w-2.5 h-0.2 absolute translate-y-0.7 bg-black "></span>
                 </div>
+                <menu class ="w-full h-menu hidden absolute top-10 left-0 z-10 text-white text-md font-bold uppercase bg-violet-200">
+                    <ul class ="w-90 mx-auto pt-6 flex items-center flex-col gap-y-3.5">
+                        <li><a href ="#">how we work</a></li>
+                        <li><a href ="#">blog</a></li>
+                        <li><a href ="#">account</a></li>
+                        <button class ="w-full max-w-2xl h-4 border-2 border-white">view plans</button>
+                    </ul>
+                    <picture>
+                        <source media ="(min-width: 900px)" srcset ="./assets/footer-desktop.svg">
+                        <img class ="w-full absolute bottom-0 left-0 rotate-180" src ="./assets/footer-mobile.svg" alt ="pattern">
+                    </picture>
+                </menu>
             </nav>
         </header>
 

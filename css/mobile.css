@@ -14,4 +14,26 @@
         font-size: 62.5%;
         font-family: 'Karla', sans-serif;
     }
+
+    #iconMenu > span:is(:first-child, :last-child) {
+        rotate: 0;
+        transition: rotate 300ms, transform 400ms 300ms;
+    }
+
+    #iconMenu.active > span:first-child {
+        rotate: 45deg;
+    }
+
+    #iconMenu.active > span:nth-child(2) {
+        scale: 0;
+    }
+
+    #iconMenu.active > span:last-child {
+        rotate: -45deg;
+    }
+
+    #iconMenu.active span:is(:first-child, :last-child) {
+        transform: translateY(0);
+        transition: transform 400ms, rotate 300ms 400ms;
+    }
 }

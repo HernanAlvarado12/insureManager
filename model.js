@@ -1,4 +1,21 @@
 
+const menu = document.querySelector('nav > menu')
+
+document.addEventListener('click', event => {
+    /**
+     * @type {Element}
+     */
+    const target = event.target
+    if(target.matches('#iconMenu')) {
+        target.classList.toggle('active')
+        menu.classList.toggle('hidden')
+    }else if(target.matches('#iconMenu > span')) {
+        target.parentElement.classList.toggle('active')
+        menu.classList.toggle('hidden')
+    }
+})
+
+
 fetch('./data.json')
     .then(response => response.json())
     .then(json => {
