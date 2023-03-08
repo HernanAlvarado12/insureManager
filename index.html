@@ -17,7 +17,7 @@
         <link rel ="shortcut icon" href ="./assets/favicon.png" type ="image/x-icon">
         <link rel ="preconnect" href ="https://fonts.googleapis.com">
         <link rel ="preconnect" href ="https://fonts.gstatic.com" crossorigin>
-        <link rel ="stylesheet" href ="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap">
+        <link rel ="stylesheet" href ="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=display:wght@400;700&display=swap">
         <link rel ="stylesheet" href ="./css/tailwin.css">
     </head>
 
@@ -33,6 +33,53 @@
                 </div>
             </nav>
         </header>
+
+        <main>
+            <picture>
+                <source media ="(min-width: 900px)" srcset ="./assets/intro-desktop.jpg">
+                <img class ="w-full aspect-lg" src ="./assets/intro-mobile.jpg" alt ="image intro">
+            </picture>
+            <figure class ="w-full py-8 flex items-center justify-center relative aspect-lg bg-violet">
+                <picture>
+                    <source media ="(min-width: 900px)" srcset ="./assets/left-desktop.svg">
+                    <img class ="absolute top-0" src ="./assets/left-mobile.svg" alt ="pattern left">
+                </picture>
+                <picture>
+                    <source media ="(min-width: 900px)" srcset ="./assets/right-desktop.svg">
+                    <img class ="absolute -bottom-50 right-0" src ="./assets/right-mobile.svg" alt ="pattern left">
+                </picture>
+                <figcaption class ="w-90 mx-auto text-center">
+                    <h1 class ="text-gray text-xl font-display">Humanizing your insurance.</h1>
+                    <p class ="my-2 text-gray text-sm">
+                        Get your life insurance coverage easier and faster. We blend our expertise and technology to help 
+                        you find the plan that’s right for you. Ensure you and your loved ones are protected.
+                    </p>
+                    <button class ="w-52 h-4 border text-white text-xs border-white">VIEW PLANS</button>
+                </figcaption>
+            </figure>
+            <section class ="mt-14 mb-10 text-center">
+                <h2 class ="text-violet-200 text-xl font-display">We're different</h2>
+                <section>
+                    <template id ="planTemplate">
+                        <article>
+                            <img alt ="icon plan" draggable ="false" loading ="lazy">
+                            <h3 class ="text-violet-200 text-lg font-display"></h3>
+                            <p class ="text-gray text-sm text-center"></p>
+                        </article>
+                    </template>
+                </section>
+            </section>
+            <figure class ="w-90 mx-auto flex items-center justify-center relative aspect-lg overflow-hidden bg-violet">
+                <picture>
+                    <source media ="(min-width: 900px)" srcset ="./assets/work-desktop.svg">
+                    <img class ="absolute top-0 right-0" src ="./assets/work-mobile.svg" alt ="pattern left">
+                </picture>
+                <figcaption class ="text-center relative">
+                    <h2 class ="text-gray text-xl font-display">Find out more about how we work</h2>
+                    <button class ="w-60 h-4 mt-3 text-white text-xs border border-white">HOW WE WORK</button>
+                </figcaption>
+            </figure>
+        </main>
 
     </body>
 
