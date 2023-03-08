@@ -1,0 +1,22 @@
+{
+  "name": "insuremaster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/mobile.css -o ./css/tailwin.css --watch"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwindcss",
+    "js",
+    "vanillajs"
+  ],
+  "type": "module",
+  "author": "Hernan Alvarado <hernanvid123@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
