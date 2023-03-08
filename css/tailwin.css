@@ -532,8 +532,8 @@ html {
   position: relative;
 }
 
-.-bottom-50 {
-  bottom: -50%;
+.-bottom-\[40\%\] {
+  bottom: -40%;
 }
 
 .right-0 {
@@ -542,18 +542,6 @@ html {
 
 .top-0 {
   top: 0px;
-}
-
-.-bottom-0 {
-  bottom: -0px;
-}
-
-.bottom-50 {
-  bottom: 50%;
-}
-
-.-bottom-\[40\%\] {
-  bottom: -40%;
 }
 
 .mx-auto {
@@ -583,16 +571,12 @@ html {
   margin-bottom: 6rem;
 }
 
-.mt-14 {
-  margin-top: 14rem;
+.mt-18 {
+  margin-top: 18rem;
 }
 
 .mt-3 {
   margin-top: 3rem;
-}
-
-.mt-18 {
-  margin-top: 18rem;
 }
 
 .flex {
